@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.scss'
+import Register from '../register/Register'
 
 const Login = () => {
   return (
@@ -19,7 +20,8 @@ const Login = () => {
           <button type="submit" className="btn-signin">Sign In</button>
         </form>
         <p className="signup-text">
-          Don't have an account? <a href="#">Sign up</a>
+          
+          Don't have an account? <a href={<Register/>}>Sign up</a>
         </p>
         <div className="divider">
           <span>OR</span>
